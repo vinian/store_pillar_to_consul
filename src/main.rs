@@ -57,7 +57,7 @@ fn get_consul_info() -> Result<Consul, Box<dyn Error>> {
     };
     let consul_host = match env::var("CONSUL_HOST") {
         Ok(host) => host,
-        _ => String::from("127.0.0.1:8500"),
+        _ => String::from("http://127.0.0.1:8500"),
     };
 
     let consul_token = env::var("CONSUL_TOKEN")?;

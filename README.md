@@ -16,7 +16,9 @@
     `cd store_pillar_to_consul; CONSUL_TOKEN=$consul_token CONSUL_KV_PREFIX='salt-shared' CONSUL_HOST=$consul_http_host cargo run /path/to/saltstack-pillar.json`
 
 CONSUL_TOKEN is the token consul use to access it db
+
 CONSUL_KV_PREFIX is the kv prefix use to store the key
+
 CONSUL_HOST is the consul http api host
 
 
